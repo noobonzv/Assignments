@@ -111,7 +111,8 @@ message Color{
 python -m grpc_tools.protoc -I. --python_out=. --grpc_python_out=. ./hw3.proto
 ```
 
-这将会产生两个python代码文件，具体的内容我们暂时可以不管，我们只需知道这样我们就可以使得服务端和客户端通信并使用上面的数据结构了，具体函数的实现还得在服务端代码完成。
+这将会产生两个python代码文件，我们会用到其中的一些函数，使用上面的数据结构来连接服务端和客户端通信，但是他们只是用来通信的，实现前面提到的函数还得在服务端由我们自己完成。
+<br>
 
 ### `rpc_client.py`
 
@@ -170,7 +171,7 @@ def kmeans_test(stub):
 
 
 
-
+<br>
 
 ### `rpc_server.py`
 
