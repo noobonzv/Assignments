@@ -1,0 +1,41 @@
+syntax = "proto3"; 
+
+service HW3 {
+  rpc SayHello (HelloRequest) returns (HelloReply) {}
+  rpc RpcMultiplication (Multiplication_input) returns (Multiplication_output) {}
+  rpc RpcSquare (Square_data) returns (Square_data) {}
+  rpc RpcKmeans (Args) returns (Color) {}  
+}
+
+
+message HelloRequest {
+  string name = 1;
+}
+message HelloReply {
+  string message = 1;
+}
+
+
+message Multiplication_input{
+  int32 num1 = 1;
+  int32 num2 = 2;
+}
+
+message Multiplication_output{
+  int32 res = 1;
+}
+
+message Square_data{
+  int32 data = 1;
+}
+
+
+message Args{
+  repeated float x_coor = 1;
+  repeated float y_coor = 2;
+  int32 n_cluster = 3;
+}
+
+message Color{
+	repeated int32 colors = 1;
+}
