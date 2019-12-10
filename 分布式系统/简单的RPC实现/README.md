@@ -16,7 +16,7 @@
 
 
 
-
+<br>
 
 # 解决方案
 
@@ -248,7 +248,7 @@ def RpcKmeans(self, request, context):
 
 
 
-
+<br>
 
 # 实验结果
 
@@ -282,13 +282,17 @@ python -m grpc_tools.protoc -I. --python_out=. --grpc_python_out=. ./hw3.proto
 
 同时运行两个客户端：
 
-![1572061219999](C:%5CUsers%5C11985%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1572061219999.png)
+![1572061219999](HW3.assets/1572061219999.png)
 
 
 
-![1572061305477](C:%5CUsers%5C11985%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1572061305477.png)
+![1572061305477](HW3.assets/1572061305477.png)
 
 
 
-![1572061319097](C:%5CUsers%5C11985%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1572061319097.png)
+![1572061319097](HW3.assets/1572061319097.png)
+
+
+
+
 
