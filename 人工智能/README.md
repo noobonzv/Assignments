@@ -26,3 +26,6 @@
 * E07_block_prob.pddl: 积木世界问题相关变量的定义，初始化状态以及目标状态的定义。
 * E07_puzzle_domain.pddl: 8数码问题相关谓词的定义。
 * E07_puzzle_prob.pddl: 8数码问题相关变量的定义，初始化状态以及目标状态的定义。
+
+### E08 贝叶斯网络 | Python
+利用pomegranate库构建贝叶斯网络，计算概率。
