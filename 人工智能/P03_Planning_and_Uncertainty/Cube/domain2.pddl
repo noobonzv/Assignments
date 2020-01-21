@@ -151,4 +151,27 @@
 			)
 		)
 	)
+	
+	(:action D
+		:parameters()
+		:effect
+		(and
+			(forall(?x ?y ?z -color)
+				(when(p1 ?x ?y ?z)
+					(and(not(p1 ?x ?y ?z))(p2 ?y ?x ?z)))
+			)
+			(forall(?x ?y ?z -color)
+				(when(p2 ?x ?y ?z)
+					(and(not(p2 ?x ?y ?z))(p3 ?y ?x ?z)))
+			)
+			(forall(?x ?y ?z -color)
+				(when(p3 ?x ?y ?z)
+					(and(not(p3 ?x ?y ?z))(p4 ?y ?x ?z)))
+			)
+			(forall(?x ?y ?z -color)
+				(when(p4 ?x ?y ?z)
+					(and(not(p4 ?x ?y ?z))(p1 ?y ?x ?z)))
+			)
+		)
+	)
 )
