@@ -103,21 +103,21 @@ end
 
 可以看到有很多比较规律的噪声。显示一下原图的傅里叶频谱：
 
-![1572171059305](C:%5CUsers%5C11985%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1572171059305.png)
+![1572171059305](proj5.assets/1572171059305.png)
 
 可以看到再红圈勾出来的几个地方存在一些很亮的点，这些就是原图的周期噪声，我们的目的就是消除他们。
 
 取`W=5,d0=100,n=4`，使得噪声在圆环上，构造的巴特沃斯滤波器如下：
 
-![1572170963320](C:%5CUsers%5C11985%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1572170963320.png)
+![1572170963320](proj5.assets/1572170963320.png)
 
 
 
 以下是调用上面的`my_butterworth()`处理图像的最终结果，先上原图进行对比：
 
-![1572170890220](C:%5CUsers%5C11985%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1572170890220.png)
+![1572170890220](proj5.assets/1572170890220-1579793556581.png)
 
-![1572170928489](C:%5CUsers%5C11985%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1572170928489.png)
+![1572170928489](proj5.assets/1572170928489.png)
 
 可以看到效果比较好，那些比较规律的噪声就被去除了。
 
@@ -182,17 +182,17 @@ end
 
 ### 实验结果
 
-![1572171309631](C:%5CUsers%5C11985%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1572171309631.png)
+![1572171309631](proj5.assets/1572171309631.png)
 
-![1572171344061](C:%5CUsers%5C11985%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1572171344061.png)
+![1572171344061](proj5.assets/1572171344061.png)
 
-![1572171379402](C:%5CUsers%5C11985%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1572171379402.png)
+![1572171379402](proj5.assets/1572171379402.png)
 
-![1572171403531](C:%5CUsers%5C11985%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1572171403531.png)
+![1572171403531](proj5.assets/1572171403531.png)
 
-![1572171454200](C:%5CUsers%5C11985%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1572171454200.png)
+![1572171454200](proj5.assets/1572171454200.png)
 
-![1572171427206](C:%5CUsers%5C11985%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1572171427206.png)
+![1572171427206](proj5.assets/1572171427206.png)
 
 
 
@@ -200,7 +200,7 @@ end
 
 直方图均衡化后的结果：
 
-![1572171495451](C:%5CUsers%5C11985%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1572171495451.png)
+![1572171495451](proj5.assets/1572171495451.png)
 
 这里要说明一下的是，**没有查到 `histeq()`函数可以直接处理彩色图像**，官方文档里面好像也没有明说，这里只是试了一下，结果未必正确。
 
